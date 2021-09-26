@@ -35,9 +35,6 @@ class App extends React.Component {
       <div>
 
         <ImageSearch handleGetRequest={this.handleGetRequest} />
-        {/* {this.state.images.length > 0 && this.state.images.map((image) => {
-          return <p key={image.id} >{ image.tags }</p>  
-        })} */}
         {
           this.state.error !== null ?
           <div style={{color: "#fff", textAlign: "center"}}> {this.state.error} </div> :
